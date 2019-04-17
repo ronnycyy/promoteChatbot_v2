@@ -10,7 +10,7 @@
 电话里的信用卡推销
 
 **依赖库的安装**<br>
-pip install rasa_core==0.9.0
+pip install rasa_core==0.9.0<br>
 (安装ta也会自动安装rasa_nlu)
 
 **开发环境**<br>
