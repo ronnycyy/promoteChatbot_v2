@@ -17,6 +17,9 @@ pip install rasa_core==0.9.0<br>
 linux<br>
 python3.6
 
+## 使用方法
+python bot.py run
+
 ## 效果：
 ### 基本信息的问答
 usr: 你们是什么银行的<br>
@@ -65,7 +68,8 @@ bot: 麻烦您再说一下，我这边信号不是很好。<br>
 链接：https://pan.baidu.com/s/1vy-YD5FHRiJyRsJM5lhyfA 
 提取码：76la 
 
-## 使用方法
+
+## 训练方法
 ### 训练NLU模型
 sh train.sh
 ### 训练Core模型
