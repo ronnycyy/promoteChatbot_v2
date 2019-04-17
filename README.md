@@ -62,5 +62,5 @@ bot: 麻烦您再说一下，我这边信号不是很好。<br>
 
 
 ## data文件夹缺少的词向量文件
-链接：https://pan.baidu.com/s/1yCfxRH9I-ORoUeSE5ksG-g  <br>
-提取码：lrvr 
+链接：https://pan.baidu.com/s/1vy-YD5FHRiJyRsJM5lhyfA 
+提取码：76la 
