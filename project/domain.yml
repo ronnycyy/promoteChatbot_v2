@@ -1,0 +1,229 @@
+action_factory: null
+action_names:
+- utter_promote
+- invite_manage
+- utter_greet
+- utter_default
+- utter_goodbye
+- utter_thanks
+- utter_refuse
+- utter_agree
+- utter_no_time
+- utter_unprofessional
+- utter_already_have_this_card
+- utter_ask_card
+- utter_ask_not_bank_call
+- utter_ask_reliablity
+- utter_ask_location
+- utter_ask_name_age
+- utter_ask_doubt_robot
+- utter_ask_doubt
+- utter_ask_dont_pass
+- utter_already_have_other_card
+- utter_never_manage_any_card
+- utter_ask_bank_manage
+- utter_ask_safety_guarantee
+- utter_ask_annual_cost
+- utter_ask_limit
+- utter_ask_upgrade_limit
+- utter_ask_calculate_interest
+- utter_ask_manage_cost
+- utter_ask_preferential_activities
+- utter_ask_repayment
+- utter_ask_manage_requirements
+- utter_ask_no_job
+- utter_ask_how_manange
+- utter_ask_how_long_manange
+- utter_ask_how_activate
+- action_manage_card
+actions:
+- utter_promote
+- invite_manage
+- utter_greet
+- utter_default
+- utter_goodbye
+- utter_thanks
+- utter_refuse
+- utter_agree
+- utter_no_time
+- utter_unprofessional
+- utter_already_have_this_card
+- utter_ask_card
+- utter_ask_not_bank_call
+- utter_ask_reliablity
+- utter_ask_location
+- utter_ask_name_age
+- utter_ask_doubt_robot
+- utter_ask_doubt
+- utter_ask_dont_pass
+- utter_already_have_other_card
+- utter_never_manage_any_card
+- utter_ask_bank_manage
+- utter_ask_safety_guarantee
+- utter_ask_annual_cost
+- utter_ask_limit
+- utter_ask_upgrade_limit
+- utter_ask_calculate_interest
+- utter_ask_manage_cost
+- utter_ask_preferential_activities
+- utter_ask_repayment
+- utter_ask_manage_requirements
+- utter_ask_no_job
+- utter_ask_how_manange
+- utter_ask_how_long_manange
+- utter_ask_how_activate
+- bot.ActionManageCard
+config:
+  store_entities_as_slots: true
+entities:
+- time
+- limit
+intents:
+- greet
+- goodbye
+- refuse
+- agree
+- no_time
+- unprofessional
+- already_have_this_card
+- ask_card
+- ask_not_bank_call
+- ask_reliablity
+- ask_location
+- ask_name_age
+- ask_doubt_robot
+- ask_doubt
+- ask_dont_pass
+- already_have_other_card
+- never_manage_any_card
+- ask_bank_manage
+- ask_safety_guarantee
+- ask_annual_cost
+- ask_limit
+- ask_upgrade_limit
+- ask_calculate_interest
+- ask_manage_cost
+- ask_preferential_activities
+- ask_repayment
+- ask_manage_requirements
+- ask_no_job
+- ask_how_manange
+- ask_how_long_manange
+- ask_how_activate
+- request_management
+- inform_time
+- inform_limit
+slots:
+  limit:
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  time:
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+templates:
+  invite_manage:
+  - text: 您可以办一张试试看哦
+  - text: 诚挚邀请您办一下哦
+  - text: 很不错的卡，您可以考虑办一下哦
+  - text: 我们这是限时优惠呢，您抓紧考虑办理哦
+  utter_agree:
+  - text: 好的， 稍后您会收到一条官方申请短信，如果有任何疑问可以拨打官方电话XXXX咨询，感谢您对光大银行的支持，再见。
+  - text: 稍后您会收到一条官方申请短信，打开链接填写一下详细信息就行了，如果有任何疑问可以拨打官方电话XXXXX咨询，感谢您对光大银行的支持，再见。
+  utter_already_have_other_card:
+  - text: 嗯嗯，既然办过的话您可以这样想，多一张信用卡也是多一笔备用金在手边，而且每家银行的活动、服务也会各有不同，现在还款又无需出门，不用担心手续问题的呢。
+  - text: 嗯嗯，办过的话也可以考虑下的，每家银行信用卡的活动、服务都不一样的，多一张信用卡也是多一笔备用金在手边嘛。
+  utter_already_have_this_card:
+  - text: 嗯，那感谢您对光大银行的支持，这边就不打扰您了，感谢您的接听，再见。
+  utter_ask_annual_cost:
+  - text: 普卡与金卡首年是免年费的，当年消费满3次就可以免次年年费，套卡中大卡消费满3次，大小卡均免除当年年费，另外网上交易也算为消费次数，比如往支付宝充值三次就可免除次年免费。
+  - text: 普卡与金卡首年免年费，次年消费满3次就可以免年费，套卡中大卡消费满3次，大小卡均免除当年年费，支付宝充值等网上交易行为也算为消费次数。
+  utter_ask_bank_manage:
+  - text: 去柜台办也可以，现在各家银行都主推线上办理，也同时节约了您的时间，只需在开通的时候去一次网点就可以了。
+  - text: 去银行办理当然可以，但是在线办理比较方便，只要两分钟，拿到卡后再去银行激活就可以了。
+  utter_ask_calculate_interest:
+  - text: 还款期限内还款是没有利息的，超期限的话会根据银行规定进行逾期计算，具体可以咨询银行柜台或登录光大银行官网进行了解。
+  - text: 还款期限内还款是没有利息的，如果超期限还款是根据银行规定来计算的。
+  utter_ask_card:
+  - text: 哦，我们这边是光大银行的信用卡。
+  - text: 我们是光大银行的信用卡。
+  utter_ask_dont_pass:
+  - text: 您之前办理应该有不符合条件的地方，现在说不定就可以审核通过了呢。
+  - text: 之前可能有不符合条件的地方，您可以再尝试申请一下。
+  utter_ask_doubt:
+  - text: 您以前办理或咨询过我们的业务吧，我们都是有记录的，现在主要也是做个回访。
+  - text: 应该是您以前办理或咨询过我们的业务，我们现在主要也是做个回访。
+  utter_ask_doubt_robot:
+  - text: 当然是人工在给你打电话啦！是我说话语速太快了吗？我们公司这边要求跟客户沟通得使用统一话术的，以后我注意一点。
+  - text: 不好意思，是不是我说话太快了？因为公司要求使用统一话术跟客户沟通的。
+  utter_ask_how_activate:
+  - text: 光大银行全国网点将近2000家，您只要选择就近的网点进行身份确认就行了。
+  - text: 选择就近的光大银行网点进行身份确认就可以了。
+  utter_ask_how_long_manange:
+  - text: 资料提交成功后，系统为您审核资料，一般5分钟左右就会将审核结果发送到您手机上，一般审核通过后两周之内会收到信用卡
+  - text: 提交资料后，系统会审核资料，一般5分钟左右您就会收到审核结果短信，审核通过后一般两周内您就会收到信用卡。
+  utter_ask_how_manange:
+  - text: 稍后我们会发送一条短信给您，您通过点击链接后登录，填写资料提交就可以了，非常方便的。
+  - text: 我给您发送一条短信，您通过点击链接进行登录，填写资料就可以了。
+  utter_ask_limit:
+  - text: 最高可获的10万额度，但额度的多少是根据个人的资质由银行风控系统评定的。
+  - text: 拨打光大银行的客服电话95595可以申请提升额度的。
+  utter_ask_location:
+  - text: 我们公司的地址在北京市西城区。
+  - text: 我们公司在北京西城区
+  utter_ask_manage_cost:
+  - text: 办理全程是不收取任何费用的。
+  - text: 办理全程都是不收取任何费用的。
+  utter_ask_manage_requirements:
+  - text: 办理有3个基本条件：持有本人有效身份证，年龄满18周岁，无不良信用记录。
+  - text: 有3个基本条件：持有本人有效身份证，年龄满18周岁，无不良信用记录。
+  utter_ask_name_age:
+  - text: 我姓李，木子李，叫我小李就行了。标准的90后呢！
+  - text: 我是90后的，就叫我小李吧。
+  utter_ask_no_job:
+  - text: 这个信用卡能否成功审核通过以及具体的核发额度，要以银行的最终审批结果为准的。
+  - text: 您可以先申请，能否成功审核通过以及具体的核发额度，都是以银行的最终审批结果为准。
+  utter_ask_not_bank_call:
+  - text: 这个请您放心，我们是光大银行授权的第三方信用卡调研中心。
+  - text: 我们是光大银行授权的第三方信用卡调研中心的，您完全不用担心。
+  utter_ask_preferential_activities:
+  - text: 我们的优惠活动种类很多，譬如10元观影、美食、洗车，每年3次航空延误险，携程酒店满500减100等礼遇。
+  - text: 我们有10元观影、美食、洗车，每年3次航空延误险，携程酒店满500减100等礼遇的活动。
+  utter_ask_reliablity:
+  - text: 能理解您的担忧，我们提供的是银行官方的申请链接，填写申请后不管成功与否均会收到银行的通知短信，请您放心。
+  - text: 我们提供的是银行官方的申请链接，申请后无论成功与否都会收到银行短信。
+  utter_ask_repayment:
+  - text: 支付宝、微信、或者绑定民生储蓄卡都可进行还款, 到了最后还款日只要您储蓄卡的金额足够，它就会自动扣款，所以还款的问题您可以完全放心。
+  - text: 用支付宝、微信、或者绑定民生储蓄卡都可以还款, 还款日只要绑定储蓄卡的资金充足会自动扣款，还款的问题您完全不用担心。
+  utter_ask_safety_guarantee:
+  - text: 我们这个是安全有保障的，您收到信用卡之后，只要持本人身份证原件、信用卡、开卡函以及申请时的电话，到就近网点核准身份，就可以开始使用了。
+  utter_ask_upgrade_limit:
+  - text: 提升额度您可以拨打光大银行的客服电话95595提出申请
+  - text: 拨打光大银行的客服电话95595可以申请提升额度的
+  utter_default:
+  - text: 您说什么
+  - text: 您能再说一遍吗，我没听清
+  - text: 不好意思哦，刚没听清，您可以再说一遍吗？
+  - text: 麻烦您再说一下，我这边信号不是很好。
+  utter_goodbye:
+  - text: 嗯嗯再见，为您服务很开心
+  - text: 嗯嗯Bye， 下次再见
+  utter_greet:
+  - text: 您好! 我是小李，请问您办过信用卡吗？
+  utter_never_manage_any_card:
+  - text: 没有办过没关系呢，办信用卡好处多多哦，能免息透支消费，享受信用卡自带的权益与优惠活动呢
+  utter_no_time:
+  - text: 好的，那稍后我将官方申请短信发送给您，您方便的时候可以去查看操作，这边就不打扰您了，感谢您的接听，再见。
+  utter_promote:
+  - text: 我们这卡不仅免年费，还有很多活动，譬如10元观影、美食、洗车，每年3次航空延误险等礼遇，福利非常多哦
+  - text: 我们的优惠活动种类很多哦，譬如10元观影、美食、洗车，每年3次航空延误险，携程酒店满500减100等礼遇。
+  - text: 我们有10元观影、美食、洗车，每年3次航空延误险，携程酒店满500减100等礼遇的活动呢
+  utter_refuse:
+  - text: 好的，那不打扰您了，祝您生活愉快，再见
+  utter_thanks:
+  - text: 不用谢，应该的
+  - text: 我应该做的
+  - text: 不客气，应该的
+  utter_unprofessional:
+  - text: 不好意思哦，我这边是新来的，要不我稍后先把办卡的申请链接发给您，您可以拨打光大银行的客服电话XXXXX，在线咨询。
+  - text: 您看这样，我先把办卡的申请链接发给您，如有问题您可以拨打光大银行的客服电话XXXXX，在线咨询。
+topics: []
