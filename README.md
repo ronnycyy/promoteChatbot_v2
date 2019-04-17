@@ -1,10 +1,12 @@
 # promoteChatbot_v2
 基于rasa的金融推销机器人(第二版)
 
-**版本更新**
+
+
+**版本更新**<br>
 舍弃了chatterbot框架，使用rasa_nlu和rasa_core训练模型
 
-**场景**
+**场景**<br>
 电话里的信用卡推销
 
 **依赖库的安装**<br>
